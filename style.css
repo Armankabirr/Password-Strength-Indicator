@@ -9,9 +9,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(219, 82, 82);
 }
+
 input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* input {
     width: 300px;
     padding: 10px;
     font-size: 16px;
@@ -33,4 +54,4 @@ p {
     transform: translateY(-50%);
     font-size: 20px;
     color: #1bce24;
-}
+} */
