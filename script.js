@@ -29,4 +29,12 @@ passwordInput.addEventListener("input", ()=>{
         message.style.color = "#2ed573";
         icon.style.color = "#2ed573";
     }
+
+    if(passwordInput.value.length < 8){
+        icon.style.visibility = "hidden";
+    }else{
+        icon.style.visibility = "visible";
+    }
+
+
 })

@@ -29,9 +29,8 @@ p {
 #input-box i {
     position: absolute;
     right: 130px;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     font-size: 20px;
     color: #1bce24;
-    display: none;
 }
