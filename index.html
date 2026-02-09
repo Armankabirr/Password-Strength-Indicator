@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
     <div class="container">
         <input type="password" class="password" placeholder="Enter your password">
-        
+
+
+        <div class="password-checklist">
+            <h3 class="title">
+                Password must contain:</h3>
+            <ul>
+                <li id="length" class="invalid">At least 8 characters</li>
+                <li id="uppercase" class="invalid">At least one uppercase letter</li>
+                <li id="lowercase" class="invalid">At least one lowercase letter</li>
+                <li id="number" class="invalid">At least one number</li>
+                <li id="special" class="invalid">At least one special character</li>
+            </ul>
+
+        </div>
     </div>
+
 
     <!-- <div class="container">
         <div id="input-box">
@@ -23,4 +39,5 @@
     </div> -->
     <script src="script.js"></script>
 </body>
+
 </html>

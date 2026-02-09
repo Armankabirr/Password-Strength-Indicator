@@ -1,3 +1,29 @@
+let password = document.querySelector(".password");
+let checklist = document.querySelectorAll(".password-checklist li");
+
+let validRegex = [
+    { regex: /.{8,}/ },
+    { regex: /[A-Z]/ },
+    { regex: /[a-z]/ },
+    { regex: /[0-9]/ },
+    { regex: /[^A-Za-z0-9]/ }
+];
+
+if (password) {
+    password.addEventListener("keyup", () => {
+        validRegex.forEach((item, index) => {
+            if (item.regex.test(password.value)) {
+                checklist[index].classList.add("checked");
+            } else {
+                checklist[index].classList.remove("checked");
+            }
+        });
+    });
+}
+
+
+//old logic
+
 // let inputBox = document.getElementById("input-box");
 // let passwordInput = document.getElementById("password");
 // let message = document.getElementById("message");
